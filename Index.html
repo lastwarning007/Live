@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream</title>
+    <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .topper {
+            font-size: 24px;
+            color: green;
+            font-weight: bold;
+            margin: 20px;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topper">Topper: Jaydeep</div>
+
+    <div class="video-container">
+        <video id="liveStream" class="video-js vjs-default-skin" controls autoplay width="800" height="450">
+            <source src="https://hocdn.news/live/starhindi.m3u8" type="application/x-mpegURL">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        var player = videojs('liveStream');
+    </script>
+
+</body>
+</html>
